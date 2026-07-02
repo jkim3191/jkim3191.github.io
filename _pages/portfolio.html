@@ -1,0 +1,35 @@
+---
+layout: archive
+title: "Projects"
+permalink: /portfolio/
+author_profile: true
+---
+
+{% include base_path %}
+
+{% for post in site.portfolio reversed %}
+  {% include archive-single.html %}
+{% endfor %}
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.archive__item-teaser video').forEach(function (video) {
+      video.muted = true;
+      video.loop = true;
+      video.playsInline = true;
+      video.removeAttribute('controls');
+
+      var keepPlaying = function () {
+        video.play().catch(function () {});
+      };
+
+      video.addEventListener('pause', keepPlaying);
+      video.addEventListener('ended', function () {
+        video.currentTime = 0;
+        keepPlaying();
+      });
+
+      keepPlaying();
+    });
+  });
+</script>

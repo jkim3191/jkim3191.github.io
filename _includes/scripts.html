@@ -1,0 +1,20 @@
+<script type="module" src="{{ base_path }}/assets/js/main.min.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll("video").forEach(function (video) {
+      var keepSilent = function () {
+        video.muted = true;
+        video.defaultMuted = true;
+        video.volume = 0;
+      };
+
+      keepSilent();
+      video.addEventListener("volumechange", keepSilent);
+    });
+  });
+</script>
+
+{% include analytics.html %}
+
+{% include comments-providers/scripts.html %}

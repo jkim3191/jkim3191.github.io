@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Portfolio - Software Developer">
+    <meta name="keywords" content="portfolio, developer, software engineer, web developer">
+    <meta name="author" content="Jae Hyeon Kim">
+    <title>Jae Hyeon Kim - Portfolio</title>
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css?v=11">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#about">Jae Hyeon Kim</a>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="about-content">
+                <!-- Left Sidebar -->
+                <div class="about-sidebar">
+                    <div class="about-image">
+                        <!-- Replace with your profile photo -->
+                        <img src="images/portfolio_profile.png" alt="Jae Hyeon Kim">
+                    </div>
+                    <h1 class="profile-name">Jae Hyeon Kim</h1>
+                    <p class="profile-tagline">Robotics M.S. Student (Mechanical Engineering) @ GT</p>
+                    <ul class="info-list">
+                        <li class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Atlanta, GA</span>
+                        </li>
+                        <li class="info-item">
+                            <a href="https://www.gatech.edu/" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-university"></i>
+                                <span>Georgia Institute of Technology</span>
+                            </a>
+                        </li>
+                        <li class="info-item">
+                            <a href="mailto:jkim3191@gatech.edu">
+                                <i class="fas fa-envelope"></i>
+                                <span>jkim3191@gatech.edu</span>
+                            </a>
+                        </li>
+                        <li class="info-item">
+                            <a href="https://github.com/jkim3191" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                        </li>
+                        <li class="info-item">
+                            <a href="https://www.linkedin.com/in/jae-hyeon-kim-669810131" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Right Content -->
+                <div class="about-main">
+                    <h2 class="about-title">About Me</h2>
+
+                    <p class="about-description">
+                        Hello 👋 and welcome to my website!<br><br>
+                    
+                        I am a Robotics M.S. student in the Mechanical Engineering department at 
+                        <a href="https://www.gatech.edu/" target="_blank" rel="noopener noreferrer">
+                            <strong>Georgia Institute of Technology</strong>
+                        </a>,
+                        where I conduct research on <strong>robotics</strong> at the 
+                        <a href="https://lab-idar.gatech.edu/" target="_blank" rel="noopener noreferrer">
+                            <strong>LIDAR Lab</strong>
+                        </a>.<br><br>
+                    
+                        My main interests are in <strong>locomotion</strong>, 
+                        <strong>control</strong>, and <strong>navigation</strong>. 
+                        I am especially interested in how optimization and physics-based modeling can be used to enable robust autonomy in complex, unstructured environments, including stability and path planning.<br><br>
+                    
+                        I have hands-on experience with ROS, simulation-based workflows, and hardware testing for developing, testing, and validating robots. 
+                        Much of that work drew on <strong>physics-based simulation</strong> and 
+                        <strong>model predictive and optimization-based control methods</strong> to generate dynamically feasible behaviors for legged and mobile robots under real-world constraints.<br><br>
+                    
+                        For me, choosing to pursue robotics research has been one of the most meaningful decisions I have made, 
+                        and I am thoroughly enjoying the learning process and the challenges that come with it. 🙂<br><br>
+                    
+                        Through this website, I am gradually shaping my journey in robotics by sharing my experience, progress as my career progresses.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <p class="section-subtitle">Some of my recent work</p>
+
+            <div class="projects-grid">
+                <!-- Project Card 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <!-- Option 1: Use video (recommended for short clips) -->
+                        <video class="project-video" autoplay loop muted playsinline>
+                            <source src="images/g1_project.mp4" type="video/mp4">
+                            <source src="images/g1_project.webm" type="video/webm">
+                            <!-- Fallback to image if video doesn't load -->
+                            <img src="images/g1_project.jpg" alt="Unitree G1 in Isaac Lab">
+                        </video>
+                        <!-- Fallback placeholder if no video is available yet -->
+                        <img src="images/WIP.jpg" alt="Work in Progress" class="placeholder-image">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Unitree G1 in Isaac Lab (Current Work)</h3>
+                        <p class="project-description">
+                            Developing a learning-based locomotion framework in Isaac Lab for stable and efficient bipedal walking. 
+                            Training traversability estimation neural networks and implementing terrain inpainting models for enhanced perception and planning.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Isaac Lab</span>
+                            <span class="tag">RL</span>
+                            <span class="tag">PyTorch</span>
+                            <span class="tag">G1</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <!-- Option 1: Use video (recommended for short clips) -->
+                        <video class="project-video" autoplay loop muted playsinline>
+                            <source src="images/digit_project.mp4" type="video/mp4">
+                            <source src="images/digit_project.webm" type="video/webm">
+                            <!-- Fallback to image if video doesn't load -->
+                            <img src="images/digit_project.jpg" alt="Bipedal Locomotion — Agility Robotics Digit">
+                        </video>
+                        <!-- Fallback placeholder if no video is available yet -->
+                        <div class="placeholder-image" style="background: linear-gradient(135deg, #764BA2 0%, #667EEA 100%);">
+                            <span>Agility Robotics Digit</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Bipedal Locomotion — Agility Robotics Digit</h3>
+                        <p class="project-description">
+                            Contributed to the initial system setup for bipedal traversability estimation using Model Predictive Control (MPC). 
+                            Implemented obstacle perception modules and designed challenging terrains in MuJoCo to evaluate locomotion stability and robustness.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">C++</span>
+                            <span class="tag">MPC</span>
+                            <span class="tag">MuJoCo</span>
+
+                            <span class="tag">Path planning</span>
+                            <span class="tag">Motion planning</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <!-- Option 1: Use video (recommended for short clips) -->
+                        <video class="project-video" autoplay loop muted playsinline>
+                            <source src="images/go2_project.mp4" type="video/mp4">
+                            <source src="images/go2_project.webm" type="video/webm">
+                            <!-- Fallback to image if video doesn't load -->
+                            <img src="images/go2_project.jpg" alt="Quadruped Navigation — Unitree Go2">
+                        </video>
+                        <!-- Fallback placeholder if no video is available yet -->
+                        <div class="placeholder-image" style="background: linear-gradient(135deg, #667EEA 0%, #4A90E2 100%);">
+                            <span>Unitree Go2 Navigation</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Quadruped Navigation — Unitree Go2</h3>
+                        <p class="project-description">
+                            Implemented goal-based navigation system enabling the quadruped robot to autonomously move toward 
+                            specified target poses. Integrated a controller interface for real-time teleoperation and manual override.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">ROS</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Navigation</span>
+                            <span class="tag">Unitree Go2</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <p class="section-subtitle">Skills I work with</p>
+
+            <div class="skills-grid">
+                <!-- Robotics & Control -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-robot"></i> Robotics & Control
+                    </h3>
+                    <div class="skills-list">
+                        <span class="skill-badge">ROS</span>
+                        <span class="skill-badge">ROS2</span>
+                        <span class="skill-badge">MPC</span>
+                        <span class="skill-badge">Optimization Control</span>
+                        <span class="skill-badge">Legged Locomotion</span>
+                    </div>
+                </div>
+
+                <!-- Simulation & Frameworks -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-cube"></i> Simulation & Frameworks
+                    </h3>
+                    <div class="skills-list">
+                        <span class="skill-badge">MuJoCo</span>
+                        <span class="skill-badge">Isaac Lab</span>
+                        <span class="skill-badge">Gazebo</span>
+                        <span class="skill-badge">PyTorch</span>
+                    </div>
+                </div>
+
+                <!-- Programming & AI/ML -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-code"></i> Programming & AI/ML
+                    </h3>
+                    <div class="skills-list">
+                        <span class="skill-badge">Python</span>
+                        <span class="skill-badge">C++</span>
+                        <span class="skill-badge">MATLAB</span>
+                        <span class="skill-badge">NN</span>
+                        <span class="skill-badge">RL</span>
+                        <span class="skill-badge">Git</span>
+                        <span class="skill-badge">Linux</span>
+                        <span class="skill-badge">Docker</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Happy to talk to you!</p>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <a href="mailto:jkim3191@gatech.edu">jkim3191@gatech.edu</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>Atlanta, GA</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Social Media</h3>
+                            <div class="contact-social">
+                                <a href="https://github.com/jkim3191" target="_blank" rel="noopener noreferrer"
+                                    aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/jae-hyeon-kim-669810131" target="_blank" rel="noopener noreferrer"
+                                    aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Jae Hyeon Kim. All rights reserved.</p>
+            <p>Built with HTML, CSS, and JavaScript</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>

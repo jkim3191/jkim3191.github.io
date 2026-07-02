@@ -1,0 +1,223 @@
+---
+---
+
+/*
+ * This file controls what is imported from /_sass
+ *
+ * Note that the files are processed in the order they are imported, so they are partly
+   sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
+ */
+
+@import
+    "vendor/breakpoint/breakpoint",
+
+    "themes",
+    "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
+    "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
+
+    "include/mixins",
+    "vendor/susy/susy",
+
+    "layout/reset",
+    "layout/base",
+
+    "include/utilities",
+    "layout/tables",
+    "layout/buttons",
+    "layout/notices",
+    "layout/masthead",
+    "layout/navigation",
+    "layout/footer",
+    "syntax",
+
+    "layout/forms",
+
+    "layout/page",
+    "layout/archive",
+    "layout/sidebar",
+    "layout/json_cv",
+
+    "vendor/font-awesome/fontawesome",
+    "vendor/font-awesome/solid",
+    "vendor/font-awesome/brands"
+;
+
+body,
+.page__content,
+.page__content p,
+.page__content li,
+.masthead,
+.greedy-nav,
+.sidebar,
+.author__bio,
+.author__urls,
+.page__footer {
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.page__title {
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.page__content,
+.page__content p,
+.page__content li {
+  font-size: 0.95rem;
+  font-weight: 350;
+  line-height: 1.6;
+  letter-spacing: 0;
+}
+
+.page__content h1,
+.page__content h2,
+.page__content h3,
+.page__content h4,
+.page__content h5,
+.page__content h6 {
+  margin-top: 1em;
+  margin-bottom: 0.4em;
+  line-height: 1.25;
+}
+
+.page__content strong,
+.page__content b {
+  font-weight: 430;
+  color: #111;
+}
+
+.page__title,
+.author__name {
+  font-weight: 500;
+}
+
+.page__content p {
+  margin-top: 0;
+  margin-bottom: 1.1em;
+}
+
+.page__content li {
+  margin-bottom: 0.35em;
+}
+
+.page__content .lab-callout {
+  color: #bf5700;
+  font-size: 1.18rem;
+  font-weight: 600;
+  line-height: 1.55;
+  margin-top: 1.35rem;
+  margin-bottom: 0;
+}
+
+.page__content .lab-callout a {
+  color: #bf5700;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.page__content .lab-callout a:hover {
+  color: #8f3f00;
+}
+
+.project-media {
+  display: block;
+  width: 100%;
+  max-height: 360px;
+  margin: 0.5em 0 1em;
+  object-fit: contain;
+  background: #f5f5f5;
+  border-radius: 4px;
+}
+
+.project-media::-webkit-media-controls-mute-button,
+.project-media::-webkit-media-controls-volume-slider,
+.project-media::-webkit-media-controls-volume-control-container {
+  display: none !important;
+}
+
+.archive__item-teaser .project-media {
+  margin: 0;
+  max-height: 260px;
+  object-fit: cover;
+}
+
+.btn--portfolio-back {
+  color: #bf5700 !important;
+  background-color: #fff8f2;
+  border: 1px solid #efc39e !important;
+  box-shadow: none;
+  padding: 0.34em 0.7em;
+  font-size: 0.74rem;
+}
+
+.btn--portfolio-back:hover {
+  color: #fff !important;
+  background-color: #d07a26;
+  border-color: #d07a26 !important;
+}
+
+.site-title-static {
+  color: var(--global-masthead-link-color);
+  cursor: default;
+}
+
+.home-panel-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 0.75rem;
+  margin: 1.3rem 0 1.6rem;
+}
+
+.home-panel {
+  border-left: 3px solid var(--global-base-color);
+  background: var(--global-code-background-color);
+  padding: 0.8rem 0.95rem;
+}
+
+.home-panel h2 {
+  font-size: 0.95rem;
+  margin: 0 0 0.35rem;
+}
+
+.home-panel p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.media-strip {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 10px;
+  margin: 0.5em 0 1em;
+  scrollbar-width: thin;
+}
+
+.media-strip figure {
+  flex: 0 0 auto;
+  width: 300px;
+  margin: 0;
+  scroll-snap-align: start;
+}
+
+.media-strip img,
+.media-strip video {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  background: #f5f5f5;
+  border-radius: 4px;
+}
+
+.media-strip figcaption {
+  margin-top: 0.35rem;
+  font-size: 0.75rem;
+}
